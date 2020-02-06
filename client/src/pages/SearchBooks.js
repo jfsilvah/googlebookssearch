@@ -35,9 +35,9 @@ class SearchBooks extends Component {
   saveBook = (event) => {
     event.preventDefault();
     let bookSaveChoice = this.state.results.filter((book) => (book.id === event.target.id));
-    bookSaveChoice = bookSaveChoice[0];
-    API.saveBook(bookSaveChoice)
-      .then(console.log(bookSaveChoice))
+    //bookSaveChoice = bookSaveChoice[0];
+    API.saveBook(bookSaveChoice[0])
+      .then(console.log(bookSaveChoice[0]))
       .catch(err => console.log(err));
   };
 
