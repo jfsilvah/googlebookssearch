@@ -9,6 +9,7 @@ export default {
   },
 
     saveBook: function(bookSaveChoice) {
+      console.log(bookSaveChoice);
       return axios.post("/api/books", bookSaveChoice);
     },
   
