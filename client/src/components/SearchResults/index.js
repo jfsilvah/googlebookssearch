@@ -21,7 +21,7 @@ function ResultsCard(props) {
                     <a href={props.link} target="_blank">
                         <button className="btn btn-primary">Detail</button>
                     </a>
-                    <button class="btn btn-outline-danger btn-sm" id={props.id} onClick={(event) => props.saveBook(event)}><i class="far fa-heart"></i></button>
+                    <button className="btn btn-outline-danger btn-sm" id={props.id} onClick={(event) => props.saveBook(event)}><i class="far fa-heart"></i></button>
                 </div>
             </div>
             <hr />
